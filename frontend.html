@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube AI Chatbot</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/7d2f1b8f5d.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div class="background-circle circle1"></div>
+    <div class="background-circle circle2"></div>
+
+    <div class="container">
+
+        <header>
+
+            <div class="logo">
+
+                <i class="fab fa-youtube"></i>
+
+                <div>
+                    <h1>YouTube AI Chatbot</h1>
+                    <p>Summarize videos & ask questions instantly.</p>
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- URL SECTION -->
+
+        <section class="card">
+
+            <h2>
+                <i class="fas fa-link"></i>
+                Video URL
+            </h2>
+
+            <div class="input-group">
+
+                <input
+                    type="text"
+                    id="videoUrl"
+                    placeholder="Paste a YouTube video link..."
+                >
+
+                <button id="summarizeBtn">
+                    <i class="fas fa-wand-magic-sparkles"></i>
+                    Generate Summary
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- SUMMARY -->
+
+        <section class="card">
+
+            <div class="section-title">
+
+                <h2>
+
+                    <i class="fas fa-file-lines"></i>
+
+                    Video Summary
+
+                </h2>
+
+            </div>
+
+            <div id="summaryBox" class="output-box">
+
+                Your AI summary will appear here...
+
+            </div>
+
+        </section>
+
+
+        <!-- CHATBOT -->
+
+        <section class="card">
+
+            <div class="section-title">
+
+                <h2>
+
+                    <i class="fas fa-robot"></i>
+
+                    Ask AI
+
+                </h2>
+
+            </div>
+
+            <div class="chat-input">
+
+                <input
+                    type="text"
+                    id="questionInput"
+                    placeholder="Ask anything about the video..."
+                >
+
+                <button id="askBtn">
+
+                    <i class="fas fa-paper-plane"></i>
+
+                    Ask
+
+                </button>
+
+            </div>
+
+            <div id="answerBox" class="output-box">
+
+                AI answers will appear here...
+
+            </div>
+
+        </section>
+
+
+        <!-- LOADING -->
+
+        <div id="loading" class="loading">
+
+            <div class="loader"></div>
+
+            <p>AI is thinking...</p>
+
+        </div>
+
+
+        <footer>
+
+            Made by Roshan Shaikh!!
+
+        </footer>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
